@@ -1,0 +1,84 @@
+.ControlPanelWrapper{
+	position: absolute;
+	z-index: 1500;
+	box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.4);
+}
+.cpMainWr{
+	display: inline-block;
+	background-color: #fff;
+}
+.cpMainWr .cpToolsList{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+.cpMainWr .cpToolIcon{
+	display: block;
+	margin: 2px;
+	list-style: none;
+	border: 0px solid #ddd;
+	overflow: hidden;
+	cursor: pointer;
+	transition: 300ms;
+}
+.cpMainWr.shortList .cpToolIcon{
+	width: 30px;
+	height: 30px;
+}
+.cpMainWr.fullList .cpToolIcon{
+	width: 130px;
+	height: 30px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.cpMainWr .cpToolIcon:hover{
+	background-color: #B7B7B7;
+}
+.cpMainWr .cpToolIcon:before{
+	content: '';
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 18px 18px;
+	vertical-align: middle;
+	opacity: 0.5;
+}
+.cpMainWr .cpToolIcon i{
+	font-style: normal;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #333;
+	opacity: 1;
+}
+.cpMainWr.shortList .cpToolIcon i{
+	/*display: none;*/
+	opacity: 0.5;
+}
+.cpToolIcon.cpIconMenu.fullList{
+	font-weight: bold;
+}
+.cpToolIcon.cpIconUser:before{
+	background-image: url('/images/icons/glyphicons_003_user.png');
+}
+.cpToolIcon.cpIconSearch:before{
+	background-image: url('/images/icons/glyphicons_027_search.png');
+}
+.cpToolIcon.cpIconMenu.shortList:before{
+	background-image: url('/images/icons/glyphicons_114_list.png');
+}
+.cpToolIcon.cpIconMenu.fullList:before{
+	background-image: url('/images/icons/glyphicons_113_justify.png');
+}
+
+.MainViewAreaWrapper{
+	position: absolute;
+	width: 250px;
+	padding: 4px;
+	background-color: #fff;
+	z-index: 1400;
+	transition: 300ms;
+	box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.35);
+}
